@@ -5,4 +5,5 @@ RUN apt-get update && apt-get install -y python-pip python-dev libpq-dev git cur
 ADD requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
 
-CMD ["bash"]
+COPY run.sh /
+CMD ["/run.sh"]
