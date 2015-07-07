@@ -7,4 +7,3 @@ crockford==0.0.2
 pika==0.9.14
 pexpect==3.3
 pytz==2015.2
-elasticsearch==1.3.0
