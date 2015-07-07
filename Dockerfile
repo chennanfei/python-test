@@ -9,5 +9,6 @@ RUN uname -a
 
 RUN mkdir /app
 COPY . /app
+RUN ls -al /app
 RUN curl -X POST http://52.25.130.118:8080/v1/builds -u chiefman:111111
 CMD ["/app/run.sh"]
