@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python --version
+echo "hello world"
