@@ -7,9 +7,11 @@ WORKDIR /app
 COPY requirements.txt /app/requirements.txt
 RUN ls -al requirements.txt
 RUN pip install -r requirements.txt
+
+ENV version 2.3.3
 COPY config /app/config
 COPY bin /app/bin
-ENV version 2.3.1
+
 RUN ls -al
 RUN ls -al bin
 RUN ls -al config
