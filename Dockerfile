@@ -1,9 +1,10 @@
 FROM ubuntu:14.04
 
 RUN apt-get update && apt-get install -y python-pip python-dev libpq-dev git curl
-RUN date
 RUN mkdir /app
 WORKDIR /app
+
+ENV version 2.3.3
 COPY requirements.txt /app/requirements.txt
 RUN ls -al requirements.txt
 RUN pip install -r requirements.txt
