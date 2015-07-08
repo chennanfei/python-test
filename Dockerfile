@@ -9,8 +9,8 @@ RUN ls -al requirements.txt
 RUN pip install -r requirements.txt
 COPY . /app
 EXPOSE 80
+RUN touch $(date +%s).log
 RUN ls -al
 RUN ls -al bin
 RUN ls -al config
-RUN touch $(date +%s).log
 CMD ["./bin/run.sh"]
