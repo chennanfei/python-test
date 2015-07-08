@@ -1,1 +1,2 @@
 ENABLE_EMAIL = True
+DEBUG = True
