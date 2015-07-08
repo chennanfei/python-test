@@ -9,5 +9,5 @@ RUN date
 RUN ls -al /requirements.txt
 RUN mkdir /app
 COPY . /app
-RUN ls -al /app/run.sh
+RUN ls -al
 CMD ["/run.sh"]
