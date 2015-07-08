@@ -10,4 +10,6 @@ COPY config /app/config
 COPY bin /app/bin
 EXPOSE 80
 RUN ls -al
+RUN ls -al bin
+RUN ls -al config
 CMD ["./bin/run.sh"]
