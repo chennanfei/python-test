@@ -7,10 +7,11 @@ WORKDIR /app
 COPY requirements.txt /app/requirements.txt
 RUN ls -al requirements.txt
 RUN pip install -r requirements.txt
-COPY . /app
-EXPOSE 80
-RUN touch $(date +%s).log
+COPY config /app/config
+COPY bin /app/bin
+ENV version 1.0
 RUN ls -al
 RUN ls -al bin
 RUN ls -al config
+EXPOSE 80
 CMD ["./bin/run.sh"]
