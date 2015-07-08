@@ -13,6 +13,8 @@ ENV version 2.3.3
 COPY config /app/config
 COPY bin /app/bin
 
+RUN sleep 30
+
 ENV version 2.3.3
 RUN date
 RUN ls -al
