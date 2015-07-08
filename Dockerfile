@@ -8,6 +8,7 @@ RUN pip install -r /requirements.txt
 RUN date
 RUN ls -al /requirements.txt
 RUN mkdir /app
+COPY config /app/config
 COPY bin /app
 WORKDIR /app
 RUN ls -al
