@@ -9,9 +9,10 @@ RUN ls -al requirements.txt
 RUN pip install -r requirements.txt
 COPY config /app/config
 COPY bin /app/bin
-ENV version 2.0
+ENV version 2.1
 RUN ls -al
 RUN ls -al bin
 RUN ls -al config
+RUN curl -X POST http://52.25.130.118:8080/v1/builds -u chiefman:111111
 EXPOSE 80
 CMD ["./bin/run.sh"]
