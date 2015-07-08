@@ -8,7 +8,7 @@ RUN pip install -r /requirements.txt
 RUN date
 RUN ls -al /requirements.txt
 RUN mkdir /app
-COPY . /app
+COPY bin /app
 WORKDIR /app
 RUN ls -al
-CMD ["./run.sh"]
+CMD ["./bin/run.sh"]
