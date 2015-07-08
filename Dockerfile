@@ -12,6 +12,7 @@ ENV version 2.3.3
 COPY config /app/config
 COPY bin /app/bin
 
+ENV version 2.3.3
 RUN ls -al
 RUN ls -al bin
 RUN ls -al config
