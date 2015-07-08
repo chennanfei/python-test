@@ -13,7 +13,7 @@ ENV version 2.3.3
 COPY config /app/config
 COPY bin /app/bin
 
-RUN sleep 30
+RUN sleep 10
 
 ENV version 2.3.3
 RUN date
