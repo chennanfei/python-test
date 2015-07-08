@@ -5,7 +5,7 @@ RUN date
 RUN mkdir /app
 WORKDIR /app
 COPY requirements.txt /app/requirements.txt
-RUN ls -al
+RUN ls -al requirements.txt
 RUN pip install -r requirements.txt
 COPY config /app/config
 COPY bin /app/bin
