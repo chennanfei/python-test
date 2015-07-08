@@ -7,7 +7,7 @@ WORKDIR /app
 COPY requirements.txt /app/requirements.txt
 RUN pip install -r requirements.txt
 COPY config /app/config
-COPY bin /app
+COPY bin /app/bin
 EXPOSE 80
 RUN ls -al
 CMD ["./bin/run.sh"]
