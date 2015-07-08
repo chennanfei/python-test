@@ -1,15 +1,12 @@
 FROM ubuntu:14.04
 
 RUN apt-get update && apt-get install -y python-pip python-dev libpq-dev git curl
-
-ADD requirements.txt /requirements.txt
-RUN pip install -r /requirements.txt
-
 RUN date
-RUN ls -al /requirements.txt
 RUN mkdir /app
+WORKDIR /app
+COPY requirements.txt /app
+RUN pip install -r requirements.txt
 COPY config /app/config
 COPY bin /app
-WORKDIR /app
 RUN ls -al
 CMD ["./bin/run.sh"]
