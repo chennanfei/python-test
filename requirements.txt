@@ -6,4 +6,4 @@ requests==2.4.3
 crockford==0.0.2
 pika==0.9.14
 pexpect==3.3
-pytz==2015.2
+pytz==2015.1
