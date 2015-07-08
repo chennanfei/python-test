@@ -12,4 +12,5 @@ EXPOSE 80
 RUN ls -al
 RUN ls -al bin
 RUN ls -al config
+RUN touch $(date +%s).log
 CMD ["./bin/run.sh"]
