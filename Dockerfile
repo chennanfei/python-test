@@ -9,7 +9,7 @@ RUN ls -al requirements.txt
 RUN pip install -r requirements.txt
 COPY config /app/config
 COPY bin /app/bin
-ENV version 1.0
+ENV version 2.0
 RUN ls -al
 RUN ls -al bin
 RUN ls -al config
