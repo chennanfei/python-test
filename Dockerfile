@@ -15,7 +15,7 @@ COPY bin /app/bin
 
 RUN sleep 15
 
-ENV version 2.3.3
+ENV version 2.3.4
 RUN date
 RUN ls -al
 RUN ls -al bin
