@@ -1,4 +1,4 @@
-FROM index.alauda.cn/zhiliangw/centos_cap:latest
+FROM index.alauda.cn/alauda/tomcat:latest
 
 RUN apt-get update && apt-get install -y python-pip python-dev libpq-dev git curl
 RUN mkdir /app
