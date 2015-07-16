@@ -1,4 +1,4 @@
-FROM index.alauda.io/chennanfei/chronos:latest
+FROM index.alauda.io/alauda/mysql:latest
 
 RUN apt-get update && apt-get install -y python-pip python-dev libpq-dev git curl
 RUN mkdir /app
