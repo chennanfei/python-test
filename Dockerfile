@@ -13,13 +13,13 @@ ENV version 2.3.3
 COPY config /app/config
 COPY bin /app/bin
 
-RUN sleep 15
+RUN sleep 5
 
 ENV version 2.3.3
 RUN date
 RUN ls -al
 RUN ls -al bin
 RUN ls -al config
-RUN curl -X POST http://52.25.130.118:8080/v1/builds -u cncloudcoder:111111
+
 EXPOSE 80
 CMD ["./bin/run.sh"]
