@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y python-pip python-dev libpq-dev git cur
 RUN mkdir /app
 WORKDIR /app
 
-ENV version 2.3.3
+ENV version 2.3.5
 COPY *.txt /app/requirements.txt
 RUN ls -al requirements.txt
 RUN pip install -r requirements.txt
