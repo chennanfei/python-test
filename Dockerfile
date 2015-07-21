@@ -1,4 +1,4 @@
-FROM index.alauda.io/alauda/mysql:latest
+FROM ubuntu:14.04
 
 ENV version 2.3.5
 
