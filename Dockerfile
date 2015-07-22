@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-ENV version 0.3
+ENV version 0.4
 
 RUN apt-get update && apt-get install -y python-pip python-dev libpq-dev git curl
 RUN mkdir /app
