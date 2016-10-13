@@ -1,3 +1,4 @@
 ci:
     - env
-    - echo $(python --version) > ci.log
+    - echo `python --version` > ci.log
+    - java -c
