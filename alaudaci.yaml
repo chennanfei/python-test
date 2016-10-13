@@ -1,0 +1,4 @@
+ci:
+    - env
+    - mkdir -p /results
+    - python --version
