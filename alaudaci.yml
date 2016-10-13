@@ -1,4 +1,3 @@
 ci:
     - env
-    - mkdir -p /results
-    - python --version
+    - echo $(python --version) > ci.log
